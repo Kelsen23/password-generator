@@ -24,7 +24,7 @@ A **Password Generator** built with **React** and **TypeScript** that allows use
 To get started, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/your-username/password-generator.git
+git clone https://github.com/Kelsen23/password-generator.git
 cd password-generator
 npm install
 npm run dev
