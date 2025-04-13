@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+# 🔐 Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **Password Generator** built with **React** and **TypeScript** that allows users to generate secure passwords with customizable options like length, numbers, symbols, and letter case.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎯 Set the **password length** (between 4 and 64 characters)
+- 🔢 Option to include **numbers**
+- 🔣 Option to include **symbols**
+- 🔠 Option to include **uppercase letters**
+- 🔡 Option to include **lowercase letters**
+- 🧠 Centralized **state management** with **Zustand**
+- 🎨 Styled with **Tailwind CSS**
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** (with Hooks)
+- **TypeScript**
+- **Zustand** (for state management)
+- **Tailwind CSS** (for styling)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Installation
+
+To get started, clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/your-username/password-generator.git
+cd password-generator
+npm install
+npm run dev
 ```
+## 🧪 How It Works
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 1️⃣ Customizing the Password
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Password Length**: Adjust the length of the password between 4 and 64 characters.
+- **Include Numbers**: Toggle to include numbers in the password.
+- **Include Symbols**: Toggle to include special symbols.
+- **Include Uppercase**: Toggle to include uppercase letters.
+- **Include Lowercase**: Toggle to include lowercase letters.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 2️⃣ Generating the Password
+
+- When the user selects the options and clicks **Generate Password**, the password is generated and displayed below the button.
+- The generated password will match the selected criteria.
+
+## 🤝 Contributing
+
+Feel free to fork the repository, open issues, and submit pull requests. All contributions are welcome!
+
+## 📜 License
+
+MIT License
